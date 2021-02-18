@@ -6,3 +6,19 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+/* ---- GENERAL ---- */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: 'Quicksand', sans-serif;
+  background-color: yellow;
+  background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  background-size: cover;
+}
