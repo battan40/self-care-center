@@ -56,9 +56,13 @@ label[type=text] {
 .button-box {
   display: flex;
   justify-content: center;
+  margin: 1% 30% 20% 30%;
+  padding: 5% 15% 5% 15%;
+  border-radius: 7px;
+  background-color: #ffffff;
 }
+
 .radio-button {
   display: flex;
   flex-direction: row;
-
 }
