@@ -42,5 +42,23 @@ label[type=text] {
 /* ---- HEADER ---- */
 .title {
   color: #ffffff;
-  padding: 3.5% 0 10% 0;
+  padding: 3.5% 0 9% 0;
+}
+
+.message-prompt {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+/* ---- TOP BOX ---- */
+.button-box {
+  display: flex;
+  justify-content: center;
+}
+.radio-button {
+  display: flex;
+  flex-direction: row;
+
 }
