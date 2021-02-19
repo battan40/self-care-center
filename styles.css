@@ -53,16 +53,53 @@ label[type=text] {
 }
 
 /* ---- TOP BOX ---- */
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .button-box {
   display: flex;
-  justify-content: center;
-  margin: 1% 30% 20% 30%;
-  padding: 5% 15% 5% 15%;
+  flex-direction: column;
+  padding: 1% 4% 3% 5%;
   border-radius: 7px;
   background-color: #ffffff;
+  height: 12vh;
+  width: 70vh;
 }
 
-.radio-button {
+ .radio-box {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+.recieve-message-button {
+  font-size: 1em;
+  background-color: #134d71;
+  border: none;
+  padding: 1%;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 4% 25% 0 25%;
+}
+
+.radio-label-left {
+  margin-right: 48%
+}
+
+.bottom-box {
   display: flex;
-  flex-direction: row;
+  padding: 2% 6% 2% 6%;
+  border-radius: 7px;
+  background-color: #ffffff;
+  height: 18vh;
+  width: 90vh;
+  margin: 15% 3% 0 20%;
+}
+
+.meditate-image {
+  width: 10vh;
 }
