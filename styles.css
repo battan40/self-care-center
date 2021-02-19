@@ -7,13 +7,13 @@ white - #ffffff;
 black - #000000;
 */
 /* ---- GENERAL ---- */
-*,
+/* *,
 *:after,
 *:before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 body,
 html {
