@@ -78,6 +78,7 @@ label[type=text] {
 
 .recieve-message-button {
   font-size: 1em;
+  font-family: sans-serif;
   background-color: #134d71;
   border: none;
   padding: 1%;
@@ -111,3 +112,7 @@ label[type=text] {
 .meditate-image {
   width: 10vh;
 }
+
+.italic {
+  text-indent: 1em;
+  transform: skewX(-9deg);
