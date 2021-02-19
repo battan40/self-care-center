@@ -13,17 +13,23 @@
     <main class="main">
       <section class="top" id="top-box">
         <h1 class="message-prompt">Which type of message?</h1>
-        <input class="radio-button" type="radio" id="affirmation-button" name="message" value="affirmation"
-         checked>
-        <label class="radio-label" for="affirmation">affirmation</label>
-        <input class="radio-button" type="radio" id="mantra-button" name="message" value="mantra"
-         checked>
-        <label class="radio-label" for="affirmation">mantra</label>
-        <button type="button" class="recieve-message-button" id="recieve-msg">Receive Message</button>
+        <div class="button-box">
+          <div class="radio-box">
+            <input  class="radio-button-left" type="radio" id="affirmation-button" name="message" value="affirmation"
+            checked>
+            <label class="radio-label-left italic" for="affirmation">affirmation</label>
+            <input class="radio-button-right" type="radio" id="mantra-button" name="message" value="mantra"
+            checked>
+            <label class="radio-label-right italic" for="affirmation">mantra</label>
+          </div class="recieve">
+          <button type="button" class="recieve-message-button" id="recieve-msg">Receive Message</button>
+        </div>
       </section>
-      <section class="bottom-box" id="bottom-box">
-        <img class="meditate-image" src="assets/meditate.svg"
-      </section>
+      <div class="bottom">
+        <section class="bottom-box" id="bottom-box">
+        <img class="meditate-image" src="assets/meditate.svg">
+        </section>
+      </div>
     </main>
     <script type="text/javascript" src="main.js"></script>
   </body>

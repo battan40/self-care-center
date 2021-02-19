@@ -6,3 +6,112 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+/* ---- GENERAL ---- */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Quicksand', sans-serif;
+  background-color: yellow;
+  background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  background-size: cover;
+}
+
+button:hover {
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+
+}
+
+label[type=text] {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+/* ---- HEADER ---- */
+.title {
+  color: #ffffff;
+  padding: 3.5% 0 9% 0;
+}
+
+.message-prompt {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+/* ---- TOP BOX ---- */
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 4% 3% 5%;
+  border-radius: 7px;
+  background-color: #ffffff;
+  height: 12vh;
+  width: 70vh;
+}
+
+ .radio-box {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+.recieve-message-button {
+  font-size: 1em;
+  background-color: #134d71;
+  border: none;
+  padding: 1%;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 4% 25% 0 25%;
+}
+
+.radio-label-left {
+  margin-right: 48%
+}
+
+/* ---- BOTTOM BOX ---- */
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom-box {
+  display: flex;
+  justify-content: center;
+  padding: 2% 6% 2% 6%;
+  border-radius: 7px;
+  background-color: #ffffff;
+  height: 20vh;
+  width: 100vh;
+  margin: 15% 3% 15% 5%;
+}
+
+.meditate-image {
+  width: 10vh;
+}
+
+.italic {
+  text-indent: 1em;
+  transform: skewX(-9deg);
