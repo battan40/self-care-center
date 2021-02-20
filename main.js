@@ -7,6 +7,7 @@ var radios = form.elements['message'];
 var favoriteButton = document.querySelector('#favorite');
 var viewFavoritesButton = document.querySelector('#view-favorites');
 var mainPageView = document.querySelector('#main-view')
+var favoritesView = document.querySelector('#favorites-page')
 
 var favoriteMessages = [];
 
@@ -37,9 +38,8 @@ function getRandomIndex(array) {
 
 function putInFavoriteMessages() {
   favoriteMessages.push(randomQuote);
-  console.log(">>>fav array", favoriteMessages[0])
 }
 
 function showFavorites() {
-  
+
 }
