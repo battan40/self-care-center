@@ -6,6 +6,7 @@ var form = document.forms[0];
 var radios = form.elements['message'];
 var favoriteButton = document.querySelector('#favorite');
 var viewFavoritesButton = document.querySelector('#view-favorites');
+var mainPageView = document.querySelector('#main-view')
 
 var favoriteMessages = [];
 
