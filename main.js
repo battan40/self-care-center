@@ -42,4 +42,7 @@ function putInFavoriteMessages() {
 
 function showFavorites() {
 
+  console.log("favs", favoritesView)
+  mainPageView.classList.add('hidden');
+  favoritesView.classList.remove('hidden');
 }
