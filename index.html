@@ -13,24 +13,24 @@
     <main class="main">
       <section class="top" id="top-box">
         <h1 class="message-prompt">Which type of message?</h1>
-        <div class="button-box">
+        <form class="button-box">
           <div class="radio-box">
-            <input  class="radio-button-left" type="radio" id="affirmation-button" name="message" value="affirmation"
-            checked>
-            <label class="radio-label-left italic" for="affirmation">affirmation</label>
-            <input class="radio-button-right" type="radio" id="mantra-button" name="message" value="mantra"
-            checked>
-            <label class="radio-label-right italic" for="affirmation">mantra</label>
-          </div class="recieve">
-          <button type="button" class="recieve-message-button" id="recieve-msg">Receive Message</button>
-        </div>
+            <input  class="radio-button-left" type="radio" id="affirmation-button" name="message" value="affirmation">
+            <label class="radio-label-left italic" for="affirmation-affirmationButton">affirmation</label>
+            <input class="radio-button-right" type="radio" id="mantra-button" name="message" value="mantra">
+            <label class="radio-label-right italic" for="mantra-button">mantra</label>
+          </div>
+          <button type="submit" class="recieve-message-button" id="recieve-msg">Receive Message</button>
+        </form>
       </section>
       <div class="bottom">
         <section class="bottom-box" id="bottom-box">
-        <img class="meditate-image" src="assets/meditate.svg">
+          <h1 class="random-phrase hidden" id="random-phrase-shows">Hidden Phrase</h1>
+          <img class="meditate-image" id="meditation-image"src="assets/meditate.svg">
         </section>
       </div>
     </main>
+    <script type="text/javascript" src="./assets/data.js"></script>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

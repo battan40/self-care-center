@@ -15,6 +15,7 @@ black - #000000;
   padding: 0;
 }
 
+body,
 html {
   font-family: 'Quicksand', sans-serif;
   background-color: yellow;
@@ -112,6 +113,16 @@ label[type=text] {
   width: 10vh;
 }
 
+.random-phrase {
+  display: flex;
+  align-items: center;
+}
+
 .italic {
   text-indent: 1em;
   transform: skewX(-9deg);
+}
+
+.hidden {
+  display: none;
+}
