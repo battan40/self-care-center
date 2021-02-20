@@ -15,6 +15,7 @@ black - #000000;
   padding: 0;
 }
 
+body,
 html {
   font-family: 'Quicksand', sans-serif;
   background-color: yellow;

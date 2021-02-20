@@ -1,36 +1,27 @@
-var affirmationButton = document.querySelector('#affirmation-button');
-var mantraButton = document.querySelector('#mantra-button');
 var receiveMsgButton = document.querySelector('#recieve-msg');
-var randomQuote = document.querySelector('#random-phrase');
+var meditationImage = document.querySelector('.meditate-image');
+var receiveMsgButton = document.querySelector('form')
+var randomQuote = document.querySelector('.random-phrase');
+var form = document.forms[0]; //grabbing the form in my html doc
+var radios = form.elements['message']; //create a var, go to forms, select an indicated el
+receiveMsgButton.addEventListener('submit', displayRandomQuote);
 
-affirmationButton.addEventListener('click', getQuote);
-mantraButton.addEventListener('click', getQuote);
-receiveMsgButton.addEventListener('click', getQuote);
-
-function getQuote() {
-
+function displayRandomQuote(event) {
+  event.preventDefault();
+    if (radios.value === 'affirmation') {
+      randomQuote.innerText = affirmationsList[getRandomIndex(affirmationsList)];
+      meditationImage.classList.add('hidden');
+      randomQuote.classList.remove('hidden');
+    } else if (radios.value === 'mantra'){
+      randomQuote.innerText = mantrasList[getRandomIndex(mantrasList)];
+      meditationImage.classList.add('hidden');
+      randomQuote.classList.remove('hidden');
+    }
+   console.log(form, "form");
+   console.log(radios, "just radios");
+   console.log(radios.value, "radios");
 }
 
-
-
-
-
-
-if event.target.classname === 'html class name the affirmation radio button click' && the receive button click then run the randomizer function through the affiration array
-
-and hide the image (display to none)
-insert adjacent inner html into the section
-using h1 in the html
-return
-
-
-
-add html h1 target
-
-event listeners for click of both/each radio button
-
-call my data.js file in my html
-
 function getRandomIndex(array) {
-  return Math.floor(Math.random() * array.length);
+ return Math.floor(Math.random() * array.length);
 }
