@@ -15,7 +15,6 @@ black - #000000;
   padding: 0;
 }
 
-body,
 html {
   font-family: 'Quicksand', sans-serif;
   background-color: yellow;
@@ -106,7 +105,7 @@ label[type=text] {
   background-color: #ffffff;
   height: 20vh;
   width: 100vh;
-  margin: 15% 3% 15% 5%;
+  margin: 15% 3% 1% 5%;
 }
 
 .meditate-image {
@@ -117,6 +116,32 @@ label[type=text] {
   display: flex;
   align-items: center;
 }
+/* ---- Favorites Box ---- */
+.main-favorite-box {
+  display: flex;
+  align-items: flex-start;
+  
+
+}
+
+.favorite-button {
+  background-color: #134d71;
+  border: none;
+  padding: 1% 8% 1% 8%;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 1% 5% 10% 12%;
+}
+
+.view-favorites-button {
+  background-color: #134d71;
+  border: none;
+  padding: 1% 8% 1% 8%;
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 1% 10% 10% 30%;
+}
+
 
 .italic {
   text-indent: 1em;
