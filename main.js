@@ -8,7 +8,7 @@ var favoriteButton = document.querySelector('#favorite');
 var viewFavoritesButton = document.querySelector('#view-favorites');
 var mainPageView = document.querySelector('#main-view');
 var favoritesView = document.querySelector('#favorites-page');
-var favoriteMessages = document.querySelector('#favorite-quote-display');
+var displayFavorites = document.querySelector('.favorite-quote-display');
 
 var favoriteMessages = [];
 
@@ -38,19 +38,18 @@ function getRandomIndex(array) {
 }
 
 function putInFavoriteMessages() {
-  favoriteMessages.push(randomQuote);
+  favoriteMessages.push(randomQuote.innerText);
 }
 
 function showFavorites() {
   mainPageView.classList.add('hidden');
   favoritesView.classList.remove('hidden');
-  favoriteMessages.innerHTML = "";
-
-  //for loop through array
-  //set a variable assigned to the value of the innerHTML
-  //call it var messageslist
-  //grab the clss messages list bubbles by the class thats in class  inside the innerhtml
-  //display them in cash money brackets, with favoriteMessages bracket .id
-  //interpolated
-  favoriteMessages.insertAdjacentHtml('afterbegin', messagesList);
+  displayFavorites.innerHTML = '';
+  for (var i = 0; i < favoriteMessages.length; i++) {
+    console.log("here", favoriteMessages[i]);
+    var messagesList = `
+     <div class="messages-list-bubbles" id=${favoriteMessages[i].id}>${favoriteMessages[i]}
+     </div>`;
+   }
+   displayFavorites.insertAdjacentHTML('afterbegin', messagesList);
 }
