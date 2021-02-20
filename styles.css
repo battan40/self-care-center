@@ -113,6 +113,11 @@ label[type=text] {
   width: 10vh;
 }
 
+.random-phrase {
+  display: flex;
+  align-items: center;
+}
+
 .italic {
   text-indent: 1em;
   transform: skewX(-9deg);
