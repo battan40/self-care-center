@@ -6,8 +6,9 @@ var form = document.forms[0];
 var radios = form.elements['message'];
 var favoriteButton = document.querySelector('#favorite');
 var viewFavoritesButton = document.querySelector('#view-favorites');
-var mainPageView = document.querySelector('#main-view')
-var favoritesView = document.querySelector('#favorites-page')
+var mainPageView = document.querySelector('#main-view');
+var favoritesView = document.querySelector('#favorites-page');
+var favoriteMessages = document.querySelector('#favorite-quote-display');
 
 var favoriteMessages = [];
 
@@ -41,8 +42,15 @@ function putInFavoriteMessages() {
 }
 
 function showFavorites() {
-
-  console.log("favs", favoritesView)
   mainPageView.classList.add('hidden');
   favoritesView.classList.remove('hidden');
+  favoriteMessages.innerHTML = "";
+
+  //for loop through array
+  //set a variable assigned to the value of the innerHTML
+  //call it var messageslist
+  //grab the small messages list bubbles by the class thats in class  inside the innerhtml
+  //display them in cash money brackets, with favoriteMessages bracket .id
+  //interpolated
+  favoriteMessages.insertAdjacentHtml('afterbegin', messagesList);
 }

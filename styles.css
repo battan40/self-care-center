@@ -142,7 +142,28 @@ label[type=text] {
   color: #ffffff;
   margin: 1% 10% 10% 30%;
 }
-/* ---- BROAD ---- */
+/* ---- FAVORITE QUOTE PAGE ---- */
+.favorite-message-page {
+  width: 100vh;
+  height: 100vh;
+
+}
+
+.favorite-title {
+  color: #ffffff;
+  padding: 3.5% 0 9% 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.favorite-quote-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
 
 
 /* ---- BROAD ---- */
