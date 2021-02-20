@@ -96,6 +96,7 @@ label[type=text] {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh
 }
 .bottom-box {
   display: flex;
@@ -105,7 +106,7 @@ label[type=text] {
   background-color: #ffffff;
   height: 20vh;
   width: 100vh;
-  margin: 15% 3% 1% 5%;
+  margin: 5% 3% 10% 5%;
 }
 
 .meditate-image {
@@ -120,17 +121,17 @@ label[type=text] {
 .main-favorite-box {
   display: flex;
   align-items: flex-start;
-  
-
+  justify-content: space-between;
+  width: 90vh;
 }
 
 .favorite-button {
   background-color: #134d71;
   border: none;
-  padding: 1% 8% 1% 8%;
+  padding: 2% 8% 2% 8%;
   border-radius: 4px;
   color: #ffffff;
-  margin: 1% 5% 10% 12%;
+  margin: 1% 15% 10% 5%;
 }
 
 .view-favorites-button {

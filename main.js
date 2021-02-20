@@ -4,6 +4,8 @@ var receiveMsgButton = document.querySelector('form')
 var randomQuote = document.querySelector('.random-phrase');
 var form = document.forms[0];
 var radios = form.elements['message'];
+var favoriteButton = document.querySelector('#favorite');
+var viewFavoritesButton = document.querySelector('#view-favorites');
 
 var favoriteMessages = [];
 
