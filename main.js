@@ -7,8 +7,6 @@ affirmationButton.addEventListener('click', getQuote);
 mantraButton.addEventListener('click', getQuote);
 receiveMsgButton.addEventListener('click', getQuote);
 
-
-
 function getQuote() {
 
 }

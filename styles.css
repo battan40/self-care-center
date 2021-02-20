@@ -115,3 +115,8 @@ label[type=text] {
 .italic {
   text-indent: 1em;
   transform: skewX(-9deg);
+}
+
+.hidden {
+  display: none;
+}
