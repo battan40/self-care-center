@@ -17,10 +17,14 @@ function displayRandomQuote(event) {
       randomQuote.innerText = affirmationsList[getRandomIndex(affirmationsList)];
       meditationImage.classList.add('hidden');
       randomQuote.classList.remove('hidden');
+      viewFavoritesButton.classList.remove('hidden');
+      favorite.classList.remove('hidden');
     } else if (radios.value === 'mantra'){
       randomQuote.innerText = mantrasList[getRandomIndex(mantrasList)];
       meditationImage.classList.add('hidden');
       randomQuote.classList.remove('hidden');
+      viewFavoritesButton.classList.remove('hidden');
+      favorite.classList.remove('hidden');
     }
 }
 
