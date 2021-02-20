@@ -49,7 +49,7 @@ function showFavorites() {
   //for loop through array
   //set a variable assigned to the value of the innerHTML
   //call it var messageslist
-  //grab the small messages list bubbles by the class thats in class  inside the innerhtml
+  //grab the clss messages list bubbles by the class thats in class  inside the innerhtml
   //display them in cash money brackets, with favoriteMessages bracket .id
   //interpolated
   favoriteMessages.insertAdjacentHtml('afterbegin', messagesList);
