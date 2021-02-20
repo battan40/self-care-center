@@ -10,6 +10,7 @@ var viewFavoritesButton = document.querySelector('#view-favorites');
 var favoriteMessages = [];
 
 receiveMsgButton.addEventListener('submit', displayRandomQuote);
+favoriteButton.addEventListener('click', putInFavoriteMessages);
 
 function displayRandomQuote(event) {
   event.preventDefault();
@@ -30,4 +31,9 @@ function displayRandomQuote(event) {
 
 function getRandomIndex(array) {
  return Math.floor(Math.random() * array.length);
+}
+
+function putInFavoriteMessages() {
+  favoriteMessages.push(randomQuote);
+  console.log(">>>fav array", favoriteMessages[0])
 }
