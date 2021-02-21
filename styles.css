@@ -8,9 +8,9 @@
 }
 
 html {
-  font-family: 'Quicksand', sans-serif;
   background-color: yellow;
   background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+  font-family: 'Quicksand', sans-serif;
   background-size: cover;
 }
 
@@ -46,35 +46,36 @@ label[type=text] {
 /* ---- TOP BOX ---- */
 .top {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
 }
 
 .button-box {
+  background-color: #ffffff;
+  border-radius: 7px;
   display: flex;
   flex-direction: column;
   padding: 1% 4% 3% 5%;
-  border-radius: 7px;
-  background-color: #ffffff;
   height: 12vh;
   width: 70vh;
 }
 
 .radio-box {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
   justify-content: space-around;
  }
 
 .recieve-message-button {
-  font-size: 1em;
   background-color: #134d71;
   border: none;
-  padding: 1%;
   border-radius: 4px;
   color: #ffffff;
+  font-size: 1em;
+  padding: 1%;
   margin: 4% 25% 0 25%;
 }
 
@@ -85,17 +86,18 @@ label[type=text] {
 /* ---- BOTTOM BOX ---- */
 .bottom {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh
 }
+
 .bottom-box {
+  background-color: #ffffff;
+  border-radius: 7px;
   display: flex;
   justify-content: center;
   padding: 2% 6% 2% 6%;
-  border-radius: 7px;
-  background-color: #ffffff;
   height: 20vh;
   width: 100vh;
   margin: 5% 3% 10% 5%;
@@ -140,6 +142,8 @@ label[type=text] {
 .favorite-message-page {
   width: 100vh;
   height: 100vh;
+  background-color: yellow;
+  background-image: linear-gradient(lavender, #78a7c6, #f7e4bf);
 }
 
 .favorite-title {
@@ -167,6 +171,8 @@ label[type=text] {
   flex-direction: column;
   justify-content: space-around;
   border-radius: 8px;
+  background-color: yellow;
+  background-image: linear-gradient(lavender, #f0eadc, #b9efe1);
 }
 
 .return-to-main {
