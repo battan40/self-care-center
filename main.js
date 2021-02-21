@@ -11,12 +11,15 @@ var favoritesView = document.querySelector('#favorites-page');
 var displayFavorites = document.querySelector('.favorite-quote-display');
 var returnToMain = document.querySelector('#return-main-page');
 
+
 var favoriteMessages = [];
 
 receiveMsgButton.addEventListener('submit', displayRandomQuote);
 favoriteButton.addEventListener('click', putInFavoriteMessages);
 viewFavoritesButton.addEventListener('click', showFavorites);
 returnToMain.addEventListener('click', goBackToMain);
+displayFavorites.addEventListener('dblclick', removeMessage);
+
 
 function displayRandomQuote(event) {
   event.preventDefault();
@@ -51,7 +54,6 @@ function showFavorites() {
     console.log("here", favoriteMessages[i]);
     displayFavorites.innerHTML+= `
      <div class="messages-list-bubbles" id=${favoriteMessages[i].id}>${favoriteMessages[i]}
-     <button class="remove-quote" id="delete-quote">Delete Message</button>
      </div>`;
    }
 }
@@ -59,4 +61,15 @@ function showFavorites() {
 function goBackToMain() {
   mainPageView.classList.remove('hidden');
   favoritesView.classList.add('hidden');
+}
+
+function removeMessage(event) {
+  var messageToDelete = event.target.id;
+  for (var i = 0; i < favoriteMessages.length; i++) {
+    if (`${favoriteMessages[i].id}` === messageToDelete){
+      favoriteMessages.splice(i, 1);
+    }
+    showFavorites();
+  }
+
 }
