@@ -47,7 +47,3 @@
   * Local Storage
 
 ## Preview
-
-<p align="left">Main Page</br>
- <img width="1000" height="500" src="./.png">
-</p>
