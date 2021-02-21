@@ -1,24 +1,53 @@
 # Self Care Center
+
+#### A Project that Reminds its Users of their Inherent value
+
+  *Work on this project has slowed or come to a full stop. Deadline 2/21/21, 9pm MST.*
+
 ## Overview
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
+  * This is a solo student project to begin to work with matching a comp utilizing `CSS`, `javaScript`, and `HTML`.  I was tasked to build an app that uses lists of mantras and affirmations to enhance their contemplative experience.
 
-The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/self-care-center.html). 
 
 ## Learning Goals
 
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+  * Write `HTML` and `CSS` to match a provided comp
+  * Utilize *DRY* `javascript` create and access functionality
+  * Understand how to listen to and respond to user events
+  * Individualize my programming skill set
+  * Lean into the beginning of understanding `localStorage`
 
 ## Setup
 
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
+  * Create a repository and clone to your personal computer
+  * Open in your text editor
+  * Read the README.md
+  * In terminal, run the command 'open index.html' to interact with the app
 
+## Project Link
+
+  * [Repo](https://github.com/battan40/self-care-center)
+
+## Contributors
+
+  * [Angela Battillo](https://github.com/battan40)
+
+## Functionality Goals
+
+  * At full functionality the user will be able to toggle between receiving a random message, saving that message and viewing all of their saved messages or delete.  
+
+## Road Map
+
+  * Ensure a user never sees a repeated message
+  * Create a login page
+  * Change the background dependent on what the USER selects
+  * Add a loading animation
+  * Add button hover growing button styles
+  * Deeper error handling
+  * Local Storage
+
+## Preview
+
+<p align="left">Main Page</br>
+ <img width="1000" height="500" src="./.png">
+</p>
