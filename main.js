@@ -42,8 +42,15 @@ function getRandomIndex(array) {
  return Math.floor(Math.random() * array.length);
 }
 
+// function putInFavoriteMessages() {
+//   favoriteMessages.push(randomQuote.innerText);
+// }
+
 function putInFavoriteMessages() {
-  favoriteMessages.push(randomQuote.innerText);
+favoriteMessages.push({
+  id: Date.now(),
+  message: randomQuote.innerText,
+});
 }
 
 function showFavorites() {
@@ -53,8 +60,10 @@ function showFavorites() {
   for (var i = 0; i < favoriteMessages.length; i++) {
     console.log("here", favoriteMessages[i]);
     displayFavorites.innerHTML+= `
-     <div class="messages-list-bubbles" id=${favoriteMessages[i].id}>${favoriteMessages[i]}
-     <button class="remove-quote" id="delete-quote">Delete Message</button>
+     <div class="messages-list-bubbles">
+     ${favoriteMessages[i].message}
+     <button class="remove-quote" id=${favoriteMessages[i].id}>Delete Message
+     </button>
      </div>`;
    }
 }
@@ -65,9 +74,9 @@ function goBackToMain() {
 }
 
 function removeMessage() {
-  var messageToDelete = event.target.id;
+  var messageToDelete = parseInt(event.target.id);
     for (var i = 0; i < favoriteMessages.length; i++) {
-      if (event.target.classList.contains('remove-quote')) {
+      if (messageToDelete === favoriteMessages[i].id) {
       favoriteMessages.splice(i, 1);
   }
     showFavorites();
