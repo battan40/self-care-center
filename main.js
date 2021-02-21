@@ -9,12 +9,14 @@ var viewFavoritesButton = document.querySelector('#view-favorites');
 var mainPageView = document.querySelector('#main-view');
 var favoritesView = document.querySelector('#favorites-page');
 var displayFavorites = document.querySelector('.favorite-quote-display');
+var returnToMain = document.querySelector('#return-main-page');
 
 var favoriteMessages = [];
 
 receiveMsgButton.addEventListener('submit', displayRandomQuote);
 favoriteButton.addEventListener('click', putInFavoriteMessages);
 viewFavoritesButton.addEventListener('click', showFavorites);
+returnToMain.addEventListener('click', goBackToMain);
 
 function displayRandomQuote(event) {
   event.preventDefault();
@@ -47,9 +49,13 @@ function showFavorites() {
   displayFavorites.innerHTML = '';
   for (var i = 0; i < favoriteMessages.length; i++) {
     console.log("here", favoriteMessages[i]);
-    var messagesList = `
+    displayFavorites.innerHTML+= `
      <div class="messages-list-bubbles" id=${favoriteMessages[i].id}>${favoriteMessages[i]}
      </div>`;
    }
-   displayFavorites.insertAdjacentHTML('afterbegin', messagesList);
+}
+
+function goBackToMain() {
+  mainPageView.classList.remove('hidden');
+  favoritesView.classList.add('hidden');
 }
