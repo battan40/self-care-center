@@ -1,3 +1,7 @@
+
+var favoriteMessages = [];
+
+
 var receiveMsgButton = document.querySelector('#recieve-msg');
 var meditationImage = document.querySelector('.meditate-image');
 var receiveMsgButton = document.querySelector('form')
@@ -10,8 +14,6 @@ var mainPageView = document.querySelector('#main-view');
 var favoritesView = document.querySelector('#favorites-page');
 var displayFavorites = document.querySelector('.favorite-quote-display');
 var returnToMain = document.querySelector('#return-main-page');
-
-var favoriteMessages = [];
 
 receiveMsgButton.addEventListener('submit', displayRandomQuote);
 favoriteButton.addEventListener('click', putInFavoriteMessages);
@@ -63,12 +65,8 @@ function goBackToMain() {
 }
 
 function removeMessage() {
-
   var messageToDelete = event.target.id;
     for (var i = 0; i < favoriteMessages.length; i++) {
-      console.log("event.target:", event.target);
-      console.log("event.target.id:", event.target.id);
-      console.log("button-class:", 'remove-quote')
       if (event.target.classList.contains('remove-quote')) {
       favoriteMessages.splice(i, 1);
   }
