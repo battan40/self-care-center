@@ -1,3 +1,7 @@
+
+var favoriteMessages = [];
+
+
 var receiveMsgButton = document.querySelector('#recieve-msg');
 var meditationImage = document.querySelector('.meditate-image');
 var receiveMsgButton = document.querySelector('form')
@@ -10,8 +14,6 @@ var mainPageView = document.querySelector('#main-view');
 var favoritesView = document.querySelector('#favorites-page');
 var displayFavorites = document.querySelector('.favorite-quote-display');
 var returnToMain = document.querySelector('#return-main-page');
-
-var favoriteMessages = [];
 
 receiveMsgButton.addEventListener('submit', displayRandomQuote);
 favoriteButton.addEventListener('click', putInFavoriteMessages);
