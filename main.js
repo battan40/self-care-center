@@ -18,7 +18,6 @@ receiveMsgButton.addEventListener('submit', displayRandomQuote);
 favoriteButton.addEventListener('click', putInFavoriteMessages);
 viewFavoritesButton.addEventListener('click', showFavorites);
 returnToMain.addEventListener('click', goBackToMain);
-// displayFavorites.addEventListener('dblclick', removeMessage);
 displayFavorites.addEventListener('click', removeMessage)
 
 
@@ -72,6 +71,5 @@ function removeMessage() {
       favoriteMessages.splice(i, 1);
   }
     showFavorites();
-}
-
+ }
 }
