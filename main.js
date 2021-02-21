@@ -66,8 +66,12 @@ function goBackToMain() {
 }
 
 function removeMessage() {
-  if (event.target.classList.contains('remove-quote')) {
-    favoriteMessages.pop()
+  var messageToDelete = event.target.id;
+    for (var i = 0; i < favoriteMessages.length; i++) {
+      if (event.target.classList.contains('remove-quote')) {
+      favoriteMessages.splice(i, 1);
   }
     showFavorites();
+}
+
 }
