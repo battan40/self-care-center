@@ -51,6 +51,7 @@ function showFavorites() {
     console.log("here", favoriteMessages[i]);
     displayFavorites.innerHTML+= `
      <div class="messages-list-bubbles" id=${favoriteMessages[i].id}>${favoriteMessages[i]}
+     <button class="remove-quote" id="delete-quote">Delete Message</button>
      </div>`;
    }
 }

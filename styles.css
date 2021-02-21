@@ -157,8 +157,6 @@ label[type=text] {
 }
 
 .favorite-quote-display {
-  /* display: flex;
-  justify-content: space-around; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
@@ -188,7 +186,7 @@ label[type=text] {
   padding: 2%;
   border-radius: 4px;
   color: #ffffff;
-  margin: 1% 10% 10% 30%;
+  margin-top: 20%;
 }
 
 .favorite-button-box {
