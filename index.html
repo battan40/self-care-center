@@ -7,10 +7,10 @@
     <title>Self-Care-Center</title>
   </head>
   <body class="body">
+    <main class="main" id="main-view">
     <header>
       <h1 class="title">✨Self Care Center✨</h1>
     </header>
-    <main class="main">
       <section class="top" id="top-box">
         <h1 class="message-prompt">Which type of message?</h1>
         <form class="button-box">
@@ -28,8 +28,19 @@
           <h1 class="random-phrase hidden" id="random-phrase-shows">Hidden Phrase</h1>
           <img class="meditate-image" id="meditation-image"src="assets/meditate.svg">
         </section>
+        <div class="main-favorite-box">
+          <button class="favorite-button hidden" id="favorite">Favorite</button>
+          <button class="view-favorites-button hidden" id="view-favorites">View Favorites</button>
+        </div>
       </div>
     </main>
+    <section class="favorite-message-page hidden" id="favorites-page">
+      <h1 class="favorite-title" id="fav-title">✨Favorite Inspirations✨</h1>
+      <article class="favorite-quote-display"></article>
+      <div class="favorite-button-box">
+        <button class="return-to-main" id="return-main-page">Return To Main</button>
+      </div>
+    </section>
     <script type="text/javascript" src="./assets/data.js"></script>
     <script type="text/javascript" src="main.js"></script>
   </body>
