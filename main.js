@@ -11,7 +11,6 @@ var favoritesView = document.querySelector('#favorites-page');
 var displayFavorites = document.querySelector('.favorite-quote-display');
 var returnToMain = document.querySelector('#return-main-page');
 
-
 var favoriteMessages = [];
 
 receiveMsgButton.addEventListener('submit', displayRandomQuote);
@@ -19,7 +18,6 @@ favoriteButton.addEventListener('click', putInFavoriteMessages);
 viewFavoritesButton.addEventListener('click', showFavorites);
 returnToMain.addEventListener('click', goBackToMain);
 displayFavorites.addEventListener('click', removeMessage)
-
 
 function displayRandomQuote(event) {
   event.preventDefault();
