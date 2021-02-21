@@ -63,8 +63,12 @@ function goBackToMain() {
 }
 
 function removeMessage() {
+
   var messageToDelete = event.target.id;
     for (var i = 0; i < favoriteMessages.length; i++) {
+      console.log("event.target:", event.target);
+      console.log("event.target.id:", event.target.id);
+      console.log("button-class:", 'remove-quote')
       if (event.target.classList.contains('remove-quote')) {
       favoriteMessages.splice(i, 1);
   }
