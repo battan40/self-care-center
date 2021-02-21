@@ -18,7 +18,8 @@ receiveMsgButton.addEventListener('submit', displayRandomQuote);
 favoriteButton.addEventListener('click', putInFavoriteMessages);
 viewFavoritesButton.addEventListener('click', showFavorites);
 returnToMain.addEventListener('click', goBackToMain);
-displayFavorites.addEventListener('dblclick', removeMessage);
+// displayFavorites.addEventListener('dblclick', removeMessage);
+displayFavorites.addEventListener('click', removeMessage)
 
 
 function displayRandomQuote(event) {
@@ -54,6 +55,7 @@ function showFavorites() {
     console.log("here", favoriteMessages[i]);
     displayFavorites.innerHTML+= `
      <div class="messages-list-bubbles" id=${favoriteMessages[i].id}>${favoriteMessages[i]}
+     <button class="remove-quote" id="delete-quote">Delete Message</button>
      </div>`;
    }
 }
@@ -63,13 +65,9 @@ function goBackToMain() {
   favoritesView.classList.add('hidden');
 }
 
-function removeMessage(event) {
-  var messageToDelete = event.target.id;
-  for (var i = 0; i < favoriteMessages.length; i++) {
-    if (`${favoriteMessages[i].id}` === messageToDelete){
-      favoriteMessages.splice(i, 1);
-    }
-    showFavorites();
+function removeMessage() {
+  if (event.target.classList.contains('remove-quote')) {
+    favoriteMessages.pop()
   }
-
+    showFavorites();
 }
