@@ -1,4 +1,4 @@
-affirmationsList = ["I forgive myself and set myself free.",
+var affirmationsList = ["I forgive myself and set myself free.",
 "I believe I can be all that I want to be.",
 "I am in the process of becoming the best version of myself.",
 "I have the freedom & power to create the life I desire.",
@@ -13,7 +13,7 @@ affirmationsList = ["I forgive myself and set myself free.",
 "I manifest perfect health by making smart choices.",
 "I am at the center of peace", "It is safe to look within for my peace of mind."];
 
-mantrasList = ["Breathing in, I send myself love.",
+var mantrasList = ["Breathing in, I send myself love.",
 "Breathing out, I send love to someone else who needs it.",
 "Every day is a fresh start.",
 "I am absoultely limitless.",

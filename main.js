@@ -1,8 +1,5 @@
-
 var favoriteMessages = [];
 
-
-var receiveMsgButton = document.querySelector('#recieve-msg');
 var meditationImage = document.querySelector('.meditate-image');
 var receiveMsgButton = document.querySelector('form')
 var randomQuote = document.querySelector('.random-phrase');
@@ -42,10 +39,6 @@ function getRandomIndex(array) {
  return Math.floor(Math.random() * array.length);
 }
 
-// function putInFavoriteMessages() {
-//   favoriteMessages.push(randomQuote.innerText);
-// }
-
 function putInFavoriteMessages() {
 favoriteMessages.push({
   id: Date.now(),
@@ -58,7 +51,6 @@ function showFavorites() {
   favoritesView.classList.remove('hidden');
   displayFavorites.innerHTML = '';
   for (var i = 0; i < favoriteMessages.length; i++) {
-    console.log("here", favoriteMessages[i]);
     displayFavorites.innerHTML+= `
      <div class="messages-list-bubbles">
      ${favoriteMessages[i].message}
