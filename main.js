@@ -17,6 +17,7 @@ favoriteButton.addEventListener('click', putInFavoriteMessages);
 viewFavoritesButton.addEventListener('click', showFavorites);
 returnToMain.addEventListener('click', goBackToMain);
 displayFavorites.addEventListener('click', removeMessage)
+window.addEventListener('load', permanentMessages)
 
 function displayRandomQuote(event) {
   event.preventDefault();
@@ -44,6 +45,7 @@ favoriteMessages.push({
   id: Date.now(),
   message: randomQuote.innerText,
 });
+permanentMessages()
 }
 
 function showFavorites() {
@@ -63,6 +65,9 @@ function showFavorites() {
 function goBackToMain() {
   mainPageView.classList.remove('hidden');
   favoritesView.classList.add('hidden');
+  randomQuote.classList.add('hidden');
+  meditationImage.classList.remove('hidden');
+
 }
 
 function removeMessage() {
@@ -73,4 +78,22 @@ function removeMessage() {
   }
     showFavorites();
  }
+ permanentMessages()
+}
+
+window.addEventListener('load', permanentMessages)
+
+function permanentMessages() {
+  save();
+  goBackToMain();
+}
+
+function save() {
+  favoriteMessages;
+  var stringifyIt = JSON.stringify(favoriteMessages);
+  localStorage.setItem('makeItWork', stringifyIt);
+  var retrieve = localStorage.getItem('makeItWork');
+  var parseMe = JSON.parse(retrieve);
+    return parseMe
+
 }
