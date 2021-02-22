@@ -142,8 +142,6 @@ label[type=text] {
 .favorite-message-page {
   width: 100vh;
   height: 100vh;
-  background-color: yellow;
-  background-image: linear-gradient(lavender, #78a7c6, #f7e4bf);
 }
 
 .favorite-title {
